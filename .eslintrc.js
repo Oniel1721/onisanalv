@@ -1,6 +1,6 @@
-
 const STATUS = {
-  OFF: 'off'
+  OFF: 'off',
+  WARN: 'warn'
 }
 
 module.exports = {
@@ -9,11 +9,7 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: [
-    'next',
-    'plugin:react/recommended',
-    'standard'
-  ],
+  extends: ['standard', 'next', 'plugin:react/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -22,11 +18,10 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module'
   },
-  plugins: [
-    'react',
-    '@typescript-eslint'
-  ],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
-    'react/react-in-jsx-scope': STATUS.OFF
+    'react/react-in-jsx-scope': STATUS.OFF,
+    'eol-last': STATUS.OFF,
+    quotes: STATUS.WARN
   }
 }
