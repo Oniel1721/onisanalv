@@ -5,6 +5,7 @@ export default css`
     main{
         height: 100vh;
         max-width: 100%;
-        background-color: ${theme.backgroundColor.warn};
+        background-color: ${theme.backgroundColor.primary};
+        color: ${theme.color.primary};
     }
 `
