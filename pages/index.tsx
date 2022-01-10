@@ -23,8 +23,8 @@ const Home: NextPage = () => {
   }, [])
   return (
     <section style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-      <h1 style={{ fontSize: '5rem' }}>Semana #{weeks} del {today.getFullYear()}</h1>
-      <h2 style={{ fontSize: '5rem' }}>La frase le toca a {name}</h2>
+      <h1 style={{ margin: '1rem', fontSize: '3rem' }}>Semana #{weeks} del {today.getFullYear()}</h1>
+      <h2 style={{ margin: '1rem', fontSize: '2.5rem' }}>La frase le toca a {name}</h2>
     </section>
   )
 }
