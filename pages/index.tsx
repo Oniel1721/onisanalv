@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 const today = new Date()
 const febraryDays = today.getFullYear() % 4 ? 29 : 28
 const daysPerMonth = [31, febraryDays, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-const names = ['JOHAN', 'ARGENIS', 'ONIEL']
+const names = ['ONIEL', 'JOHAN', 'ARGENIS']
 
 const Home: NextPage = () => {
   const [name, setName] = useState('')
